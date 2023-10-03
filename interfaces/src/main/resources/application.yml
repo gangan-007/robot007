@@ -1,2 +1,8 @@
 server:
   port: 8090
+  #xxx 敏感数据不提交，换成自己的
+chatbot-api:
+  groupId: xxx
+  cookie: xxx
+  openAiKey: xxx
+

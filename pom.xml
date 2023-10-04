@@ -20,6 +20,7 @@
         <module>application</module>
         <module>interfaces</module>
         <module>infrastructure</module>
+        <module>common</module>
     </modules>
 
     <dependencyManagement>

@@ -17,7 +17,6 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -29,11 +28,8 @@ public class OpenAI implements IOpenAI {
 
     private Logger logger = LoggerFactory.getLogger(OpenAI.class);
 
-    @Value("${chatbot-api.openAiKey}")
-    private String openAiKey;
-
     @Override
-    public String doChatGPT(String question) throws IOException {
+    public String doChatGPT(String openAiKey, String question) throws IOException {
 
         String pro = "127.0.0.1";//本机地址
         int pro1 = 33210; //代理端口号

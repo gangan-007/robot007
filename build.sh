@@ -1,0 +1,1 @@
+ docker build -f ./Dockerfile -t rebot007:1.0 .

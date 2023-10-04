@@ -1,0 +1,1 @@
+docker run -p 8090:8090 --name rebot007 -d rebot007:1.0
